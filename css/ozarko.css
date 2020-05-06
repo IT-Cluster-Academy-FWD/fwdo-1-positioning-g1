@@ -14,9 +14,9 @@ main {
 }
 /* Загальні налаштування секцій*/
 .square-circle-section,
+.circle-triangle-section,
 .circle-triangle-section-reverse,
-.circle-square-triangle-section,
-.circle-triangle-section {
+.circle-square-triangle-section {
   position: relative;
   height: 350px;
   width: 350px;
@@ -24,9 +24,9 @@ main {
 }
 /* Загальні налаштування кола */
 .first-section-circle,
+.second-section-circle,
 .third-section-circle,
-.fourth-section-circle,
-.second-section-circle {
+.fourth-section-circle {
   position: absolute;
   left: 25px;
   top: 25px;
@@ -110,6 +110,7 @@ main {
 
 .fourth-section-circle {
   background-color: #35A7FF;
+  z-index: 1;
 }
 
 .fourth-section-square {
@@ -118,8 +119,10 @@ main {
 
 .fourth-section-triangle-top {
   border-color: transparent transparent #FFE066 transparent;
+  z-index: 2;
 }
 
 .fourth-section-triangle-bottom {
   border-color: #FF5964 transparent transparent transparent;
+  z-index: 2;
 }
