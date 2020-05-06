@@ -14,20 +14,15 @@ main {
   background-color: burlywood;
 }
 /* General section setting*/
-.square-circle-section,
-.circle-triangle-section,
-.circle-triangle-section-reverse,
-.circle-square-triangle-section {
+.section {
   position: relative;
   height: 350px;
   width: 350px;
   background-color: goldenrod;
+  margin-left: 30px;
 }
 /*  General circle setting */
-.first-section-circle,
-.second-section-circle,
-.third-section-circle,
-.fourth-section-circle {
+.circle {
   position: absolute;
   left: 25px;
   top: 25px;
@@ -36,8 +31,7 @@ main {
   border-radius: 50%;
 }
 /* General square setting */
-.first-section-square,
-.fourth-section-square {
+.square {
   position: absolute;
   left: 25px;
   top: 25px;
@@ -45,8 +39,7 @@ main {
   width: 300px;
 }
 /* General top triangle setting */
-.second-section-triangle-top,
-.fourth-section-triangle-top {
+.triangle-top {
   position: absolute;
   bottom: 175px;
   left: 25px;
@@ -56,8 +49,7 @@ main {
   border-width: 0 150px 150px 150px;
 }
 /* General bottom triangle setting */
-.third-section-triangle-bottom,
-.fourth-section-triangle-bottom {
+.triangle-bottom {
   position: absolute;
   top: 175px;
   left: 25px;
@@ -67,63 +59,57 @@ main {
   border-width: 150px 150px 0 150px;
 }
 /* Task №1 */
-.first-section-circle {
+.square-circle-section .circle {
   background-color: #39393A;
   z-index: 1;
 }
-.first-section-square {
+.square-circle-section .square {
   background-color: #E6E6E6;
 }
-
 /* Task №2 */
 .circle-triangle-section {
   background-color: #2E282A;
-  margin-left: 30px;
 }
 
-.second-section-circle {
+.circle-triangle-section .circle {
   background-color: #CD5334;
 }
 
-.second-section-triangle-top {
+.circle-triangle-section .triangle-top {
   border-color: transparent transparent #EDB88B transparent;
 }
-
 /* Task №3 */
 .circle-triangle-section-reverse {
-  margin-left: 30px;
   background-color: #073B4C;
 }
 
-.third-section-circle {
+.circle-triangle-section-reverse .circle {
   background-color: #06D6A0;
 }
 
-.third-section-triangle-bottom {
+.circle-triangle-section-reverse .triangle-bottom {
   border-color: #118AB2 transparent transparent transparent;
 }
-
 /* Task №4 */
 .circle-square-triangle-section {
   background-color: #FFFFFF;
-  margin-left: 30px;
 }
 
-.fourth-section-circle {
+.circle-square-triangle-section .circle {
   background-color: #35A7FF;
   z-index: 1;
 }
 
-.fourth-section-square {
+.circle-square-triangle-section .square {
   background-color: #38618C;
 }
 
-.fourth-section-triangle-top {
+.circle-square-triangle-section .triangle-top {
   border-color: transparent transparent #FFE066 transparent;
   z-index: 2;
 }
 
-.fourth-section-triangle-bottom {
+.circle-square-triangle-section .triangle-bottom {
   border-color: #FF5964 transparent transparent transparent;
   z-index: 2;
 }
