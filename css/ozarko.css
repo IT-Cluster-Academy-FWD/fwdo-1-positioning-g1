@@ -1,8 +1,9 @@
-/* Загальні налаштування вікна */
+/* General settings */
 * {
   margin: 0;
   padding: 0;
 }
+
 main {
   display: flex;
   flex-direction: row;
@@ -12,7 +13,7 @@ main {
   width: 100%;
   background-color: burlywood;
 }
-/* Загальні налаштування секцій*/
+/* General section setting*/
 .square-circle-section,
 .circle-triangle-section,
 .circle-triangle-section-reverse,
@@ -22,7 +23,7 @@ main {
   width: 350px;
   background-color: goldenrod;
 }
-/* Загальні налаштування кола */
+/*  General circle setting */
 .first-section-circle,
 .second-section-circle,
 .third-section-circle,
@@ -34,7 +35,7 @@ main {
   width: 300px;
   border-radius: 50%;
 }
-/* Загальні налаштування квадрату */
+/* General square setting */
 .first-section-square,
 .fourth-section-square {
   position: absolute;
@@ -43,7 +44,7 @@ main {
   height: 300px;
   width: 300px;
 }
-/* Загальні налаштування трикутника верх */
+/* General top triangle setting */
 .second-section-triangle-top,
 .fourth-section-triangle-top {
   position: absolute;
@@ -54,7 +55,7 @@ main {
   border-style: solid;
   border-width: 0 150px 150px 150px;
 }
-/* Загальні налаштування трикутника низ */
+/* General bottom triangle setting */
 .third-section-triangle-bottom,
 .fourth-section-triangle-bottom {
   position: absolute;
@@ -65,7 +66,7 @@ main {
   border-style: solid;
   border-width: 150px 150px 0 150px;
 }
-/* Завдання №1 */
+/* Task №1 */
 .first-section-circle {
   background-color: #39393A;
   z-index: 1;
@@ -74,7 +75,7 @@ main {
   background-color: #E6E6E6;
 }
 
-/* Завдання №2 */
+/* Task №2 */
 .circle-triangle-section {
   background-color: #2E282A;
   margin-left: 30px;
@@ -88,7 +89,7 @@ main {
   border-color: transparent transparent #EDB88B transparent;
 }
 
-/* Завдання №3 */
+/* Task №3 */
 .circle-triangle-section-reverse {
   margin-left: 30px;
   background-color: #073B4C;
@@ -102,7 +103,7 @@ main {
   border-color: #118AB2 transparent transparent transparent;
 }
 
-/* Завдання №4 */
+/* Task №4 */
 .circle-square-triangle-section {
   background-color: #FFFFFF;
   margin-left: 30px;
