@@ -5,7 +5,7 @@
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -13,29 +13,93 @@ main {
   background-color: burlywood;
 }
 
-.square-circle-section {
+.square-circle-section,
+.circle-triangle-section-reverse,
+.circle-square-triangle-section {
   position: relative;
   height: 350px;
   width: 350px;
-  background-color: red;
+  background-color: goldenrod;
 }
 
-.square-circle-section .circle {
+.first-section-circle,
+.second-section-circle,
+.third-section-circle {
   position: absolute;
   left: 25px;
   top: 25px;
   height: 300px;
   width: 300px;
-  background-color: blue;
   border-radius: 50%;
   z-index: 1;
 }
 
-.square-circle-section .square {
+.first-section-circle {
+  background-color: blue;
+}
+
+.first-section-square,
+.third-section-square {
   position: absolute;
   left: 25px;
   top: 25px;
   height: 300px;
   width: 300px;
-  background-color: burlywood;
+  background-color: yellow;
+}
+
+.circle-triangle-section-reverse {
+  margin-left: 30px;
+  background-color: navy;
+}
+
+.second-section-circle {
+  background-color: red;
+}
+
+.second-section-triangle {
+  position: absolute;
+  top: 175px;
+  left: 25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 150px 0 150px;
+  border-color: #000000 transparent transparent transparent;
+  z-index: 1;
+}
+
+.circle-square-triangle-section {
+  background-color: #50B2C0;
+  margin-left: 30px;
+}
+
+.third-section-circle {
+  background-color: 
+}
+
+.third-section-square {
+  background-color: #FEEFDD;
+}
+
+.third-section-triangle-top {
+  position: absolute;
+  left: 25px;
+  bottom: 175px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 150px 150px;
+  border-color: transparent transparent #FF4000 transparent;
+}
+
+.third-section-triangle-bottom {
+  position: absolute;
+  top: 175px;
+  left: 25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 150px 0 150px;
+  border-color: #FAAA8D transparent transparent transparent;
 }
