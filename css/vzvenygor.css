@@ -25,3 +25,114 @@
   height: 300px;
   background-color: red;
 }
+
+.circle-triangle-section {
+  position: relative;
+  width: 310px;
+  height: 310px;
+  background-color: darkgoldenrod;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.circle-triangle-section .circle-tri {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: blueviolet;
+}
+
+.circle-triangle-section .triangle {
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 107px 257px 105px;
+  border-color: transparent transparent #37ff00 transparent;
+  z-index: 1;
+}
+
+.circle-triangle-section-reverse {
+  position: relative;
+  width: 310px;
+  height: 310px;
+  background-color: violet;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.circle-triangle-section-reverse .circle-reverse {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: burlywood;
+}
+
+.circle-triangle-section-reverse .triangle-reverse {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 258px 106px 0 106px;
+  border-color: #007bff transparent transparent transparent;
+}
+
+.circle-square-triangle-section {
+  position: relative;
+  width: 310px;
+  height: 310px;
+  background-color: red;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.circle-square-triangle-section .square-cst {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+
+.circle-square-triangle-section .circle-cst {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.circle-square-triangle-section .triangle-top-cst {
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 107px 257px 105px;
+  border-color: transparent transparent green;
+}
+
+.circle-square-triangle-section .triangle-bottom-cst {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 256px 107px 0 106px;
+  border-color: #007bff transparent transparent transparent;
+}
