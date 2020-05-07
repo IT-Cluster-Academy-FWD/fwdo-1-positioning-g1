@@ -4,69 +4,67 @@
   padding: 0;
 }
 
-main {
+.main {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  width: 100%;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  min-width: 100%;
   background-color: burlywood;
 }
-/* General section setting*/
+/* General main settings*/
 .section {
   position: relative;
-  height: 350px;
-  width: 350px;
-  background-color: goldenrod;
-  margin-left: 30px;
+  min-height: 350px;
+  min-width: 350px;
+  margin: 10px;
 }
-/*  General circle setting */
-.circle {
+
+.main div {
   position: absolute;
   left: 25px;
-  top: 25px;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
 }
-/* General square setting */
+
+.circle,
 .square {
-  position: absolute;
-  left: 25px;
   top: 25px;
   height: 300px;
   width: 300px;
 }
-/* General top triangle setting */
-.triangle-top {
-  position: absolute;
-  bottom: 175px;
-  left: 25px;
+
+.triangle-top,
+.triangle-bottom {
   width: 0;
   height: 0;
   border-style: solid;
+}
+
+/*  General circle setting */
+.circle {
+  border-radius: 50%;
+}
+/* General top triangle setting */
+.triangle-top {
+  bottom: 175px;
   border-width: 0 150px 150px 150px;
 }
 /* General bottom triangle setting */
 .triangle-bottom {
-  position: absolute;
   top: 175px;
-  left: 25px;
-  width: 0;
-  height: 0;
-  border-style: solid;
   border-width: 150px 150px 0 150px;
 }
-/* Task №1 */
+/* The colors to Task №1 */
+.square-circle-section {
+  background-color: #F77F00;
+}
 .square-circle-section .circle {
   background-color: #39393A;
-  z-index: 1;
 }
 .square-circle-section .square {
   background-color: #E6E6E6;
 }
-/* Task №2 */
+/* The colors to Task №2 */
 .circle-triangle-section {
   background-color: #2E282A;
 }
@@ -78,7 +76,7 @@ main {
 .circle-triangle-section .triangle-top {
   border-color: transparent transparent #EDB88B transparent;
 }
-/* Task №3 */
+/* The colors to Task №3 */
 .circle-triangle-section-reverse {
   background-color: #073B4C;
 }
@@ -90,14 +88,13 @@ main {
 .circle-triangle-section-reverse .triangle-bottom {
   border-color: #118AB2 transparent transparent transparent;
 }
-/* Task №4 */
+/* The colors to Task №4*/
 .circle-square-triangle-section {
   background-color: #FFFFFF;
 }
 
 .circle-square-triangle-section .circle {
   background-color: #35A7FF;
-  z-index: 1;
 }
 
 .circle-square-triangle-section .square {
@@ -106,10 +103,8 @@ main {
 
 .circle-square-triangle-section .triangle-top {
   border-color: transparent transparent #FFE066 transparent;
-  z-index: 2;
 }
 
 .circle-square-triangle-section .triangle-bottom {
   border-color: #FF5964 transparent transparent transparent;
-  z-index: 2;
 }
