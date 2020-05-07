@@ -1,0 +1,104 @@
+*{
+  padding: 0px;
+  margin: 20px; 
+}
+
+body {
+  background-color: rgb(156, 179, 228);
+}
+
+.square-circle-section .circle-1{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgb(43, 107, 226);
+  position: relative;
+  z-index: 1;
+}
+
+.square-circle-section .square-1{
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  background-color: rgb(9, 0, 128);
+}
+
+.circle-triangle-section .circle-2{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgb(34, 97, 22);
+  position: relative;
+}
+
+.circle-triangle-section .triangle-1{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 120px 240px 120px;
+  border-color: transparent transparent rgb(184, 207, 79) transparent;
+  position: absolute;
+  top: 340px;
+  left: 110px;
+  z-index: 1;
+}
+
+.circle-triangle-section-reverse .circle-3{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgb(218, 148, 19);
+  position: relative;
+}
+
+.circle-triangle-section-reverse .triangle-2{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 240px 120px 0 120px;
+  border-color: rgb(214, 16, 16) transparent transparent transparent;
+  position: absolute;
+  top: 720px;
+  left: 110px;
+}
+
+.circle-square-triangle-section .square-2{
+  height: 300px;
+  width: 300px;
+  border: 0px;
+  background-color: rgb(212, 0, 255);
+  position: relative;
+}
+
+.circle-square-triangle-section .circle-4{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: rgb(170, 140, 240);
+  position: absolute;
+  top: 980px;
+}
+
+.circle-square-triangle-section .triangle-3{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 150px 150px;
+  border-color: transparent transparent rgb(255, 0, 106) transparent;  
+  position: absolute;
+  top: 980px;
+}
+
+.circle-square-triangle-section .triangle-4{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 150px 0 150px;
+  border-color: rgb(178, 34, 70) transparent transparent transparent;  
+  position: absolute;
+  top: 1130px;
+}
+
