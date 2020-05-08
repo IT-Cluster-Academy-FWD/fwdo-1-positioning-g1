@@ -1,104 +1,99 @@
-*{
-  padding: 0px;
-  margin: 20px; 
+* {
+  margin: 0px;
 }
 
 body {
   background-color: rgb(156, 179, 228);
 }
+ 
+#square-circle, #circle-triangle, #circle-triangle-reverse, #circle-square-triangle {
+  position: relative;
+  padding: 0px;
+  margin: 20px;
+}
 
-.square-circle-section .circle-1{
+/*Square-circle section*/
+.circle {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  background-color: rgb(43, 107, 226);
-  position: relative;
-  z-index: 1;
 }
 
-.square-circle-section .square-1{
-  position: absolute;
-  top: 20px;
-  left: 80px;
+.square {
   height: 300px;
   width: 300px;
   border: 0px;
+}
+
+.square-circle-section .circle {
+  background-color: rgb(43, 107, 226);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.square-circle-section .square {
   background-color: rgb(9, 0, 128);
 }
-
-.circle-triangle-section .circle-2{
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  background-color: rgb(34, 97, 22);
-  position: relative;
-}
-
-.circle-triangle-section .triangle-1{
+ 
+/*Circle-triangle section*/
+.triangle {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 120px 240px 120px;
+}
+
+.circle-triangle-section .circle {
+  background-color: rgb(34, 97, 22);
+}
+
+.circle-triangle-section .triangle {
   border-color: transparent transparent rgb(184, 207, 79) transparent;
   position: absolute;
-  top: 340px;
-  left: 110px;
-  z-index: 1;
+  top: 0px;
+  left: 30px;
 }
 
-.circle-triangle-section-reverse .circle-3{
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  background-color: rgb(218, 148, 19);
-  position: relative;
-}
-
-.circle-triangle-section-reverse .triangle-2{
-  width: 0;
-  height: 0;
-  border-style: solid;
+/*Circle-triangle-section-reverse*/
+.triangle-reverse {
   border-width: 240px 120px 0 120px;
+}
+.circle-triangle-section-reverse .circle {
+  background-color: rgb(218, 148, 19);
+}
+
+.circle-triangle-section-reverse .triangle-reverse {
   border-color: rgb(214, 16, 16) transparent transparent transparent;
   position: absolute;
-  top: 720px;
-  left: 110px;
+  top: 60px;
+  left: 30px;
 }
 
-.circle-square-triangle-section .square-2{
-  height: 300px;
-  width: 300px;
-  border: 0px;
+/*Circle-square-triangle section*/
+.circle-square-triangle-section .square {
   background-color: rgb(212, 0, 255);
-  position: relative;
+  top: 960px;
 }
-
-.circle-square-triangle-section .circle-4{
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
+.circle-square-triangle-section .circle {
   background-color: rgb(170, 140, 240);
   position: absolute;
-  top: 980px;
+  z-index: 1;
+  top: 0px;
 }
 
-.circle-square-triangle-section .triangle-3{
-  width: 0;
-  height: 0;
-  border-style: solid;
+.circle-square-triangle-section .triangle {
   border-width: 0 150px 150px 150px;
-  border-color: transparent transparent rgb(255, 0, 106) transparent;  
+  border-color: transparent transparent rgb(255, 0, 106) transparent;
   position: absolute;
-  top: 980px;
+  top: 0px;
+  z-index: 2;
 }
 
-.circle-square-triangle-section .triangle-4{
-  width: 0;
-  height: 0;
-  border-style: solid;
+.circle-square-triangle-section .triangle-reverse {
   border-width: 150px 150px 0 150px;
   border-color: rgb(178, 34, 70) transparent transparent transparent;  
   position: absolute;
-  top: 1130px;
+  top: 150px;
+  z-index: 3;
 }
-
