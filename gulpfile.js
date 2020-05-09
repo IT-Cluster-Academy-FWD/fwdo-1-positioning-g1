@@ -1,12 +1,12 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
-gulp.task('browser-sync', function(){
+gulp.task('browser-sync', function () {
     browserSync.init({
-        server:{
+        server: {
             baseDir: './'
         }
     });
 });
 
-gulp.task('default', ['browser-sync']);
+gulp.task('default', gulp.series('browser-sync'));
