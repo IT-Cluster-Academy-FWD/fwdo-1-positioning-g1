@@ -6,7 +6,7 @@ body {
   background-color: rgb(156, 179, 228);
 }
  
-#square-circle, #circle-triangle, #circle-triangle-reverse, #circle-square-triangle {
+.main-property {
   position: relative;
   height: 300px;
   width: 300px;
@@ -61,6 +61,7 @@ body {
 .triangle-reverse {
   border-width: 240px 120px 0 120px;
 }
+
 .circle-triangle-section-reverse .circle {
   background-color: rgb(218, 148, 19);
 }
@@ -75,8 +76,8 @@ body {
 /*Circle-square-triangle section*/
 .circle-square-triangle-section .square {
   background-color: rgb(212, 0, 255);
-  top: 960px;
 }
+
 .circle-square-triangle-section .circle {
   background-color: rgb(170, 140, 240);
   position: absolute;
